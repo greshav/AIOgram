@@ -1,10 +1,9 @@
 import requests
 from pprint import pprint
 import time
-
+from bot_token import BOT_TOKEN
 
 API_URL: str = 'https://api.telegram.org/bot'
-BOT_TOKEN: str = '5893681407:AAFZd7tUSbmu7jrocCdOygE2YxbqiyKvvDs'
 TEXT: str = 'Ура! Классный апдейт!'
 MAX_COUNTER: int = 100
 
@@ -13,7 +12,6 @@ API_CATS_URL = 'https://aws.random.cat/meow'
 offset: int = -1
 counter: int = 0
 chat_id: int
-
 
 while counter < MAX_COUNTER:
 
